@@ -1,0 +1,9 @@
+name: 'Subtema'
+type: theme
+description: 'Um subtema baseado no Tema Pai'
+base theme: bartik
+core: '8.x'
+libraries:
+  - subtema/global-styling
+ckeditor_stylesheets:
+  - css/custom.css

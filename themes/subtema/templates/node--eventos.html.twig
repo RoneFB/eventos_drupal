@@ -1,0 +1,10 @@
+<article{{ attributes }}>
+  {% if node.field_quantidade_de_vagas_ainda_.value > 0 %}
+    <h1>{{ node.title.value }}</h1>
+  {% else %}
+    <h1>Desculpe, não há mais vagas para este evento!</h1>
+  {% endif %}
+    <h4>{{ node.field_data_do_evento.value }}</h4>
+    <pre>{{ node.body.summary|raw }}</pre>
+    <h5>{{ node.field_quantidade_de_vagas_ainda_.value }}</h5>
+</article>
